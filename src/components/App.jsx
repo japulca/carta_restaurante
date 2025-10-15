@@ -1,4 +1,6 @@
 import MenuSection from "./MenuSection";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function App() {
   const datosMenu = [
@@ -34,14 +36,7 @@ function App() {
   return (
     <>
       <div className="main">
-        <header>
-          <h1>CAMPER CAFE</h1>
-          <p>
-            <em>Est 2020</em>
-          </p>
-        </header>
-
-        <hr className="line lower" />
+        <Header titulo="CAMPER CAFE" parrafo="Est 2020" />
 
         {datosMenu.map((section, index) => (
           <MenuSection
@@ -53,14 +48,10 @@ function App() {
           />
         ))}
 
-        <hr className="line lower" />
-
-        <footer>
-          <p>
-            <u>Visit our website</u>
-          </p>
-          <p>123 Free Code Camp Drive</p>
-        </footer>
+        <Footer
+          web="https://www.freecodecamp.org"
+          direction="123 Free Code Camp Drive"
+        />
       </div>
     </>
   );
