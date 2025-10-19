@@ -1,6 +1,6 @@
-import MenuSection from "./MenuSection";
-import Header from "./Header";
-import Footer from "./Footer";
+import MenuSection from "./components/MenuSection";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   const datosMenu = [
